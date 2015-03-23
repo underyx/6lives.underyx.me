@@ -1,0 +1,25 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="hu-HU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="X-UA-Compatible" content="IE=Edge, chrome=1">
+
+	<title>{{ page.title }}</title>
+	<link rel="icon" href="/img/favicon.ico">
+
+	<meta name="author" content="Bence Nagy">
+	<style type="text/css">
+    {% capture include_to_scssify %}
+      {% include main.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
+</head>
+<body>
+	{{ content }}
+</body>
+</html>
