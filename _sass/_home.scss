@@ -78,12 +78,21 @@ article.home {
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
-    user-select: none;
     box-sizing: border-box;
     font-family: inherit;
     font-size: 100%;
     padding: 0.5em 1em;
     border: 4px solid white;
     text-decoration: none;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    &:active {
+      background: rgba(0, 0, 0, 0.2);
+    }
   }
 }
